@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Utama | Nizar Web Catalog</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #F5F5F5;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #6C63FF; 
+    }
+
+    .navbar a {
+      color: #FFF;
+      font-weight: 500;
+    }
+
+    .container {
+      background-color: #FFFFFF;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    h3 {
+      color: #6C63FF;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+
+    .btn-primary {
+      background-color: #6C63FF;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .btn-primary:hover {
+      background-color: #5a4fd0;
+      transform: scale(1.05);
+      transition: background-color 0.3s ease;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .grid-item {
+      background-color: #F8F8F8;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item h4 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .grid-item p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer {
+      background-color: #6C63FF;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="login.html" class="btn btn-primary">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Selamat Datang di Halaman Utama</h1>
+    <p>Untuk mengakses halaman dashboard, silakan login terlebih dahulu.</p>
+
+    <div class="grid-container">
+      <div class="grid-item" onclick="window.location.href='toko_kami.html'">
+        <h4>Toko Kami</h4>
+        <p>Toko kami berfokus pada bidang <strong>fashion</strong>, menyediakan berbagai pilihan fashion terbaru.</p>
+      </div>
+
+      <div class="grid-item" onclick="window.location.href='kategori.html'">
+        <h4>Kategori</h4>
+        <p>Temukan kategori fashion yang kamu cari, dari pakaian, aksesoris, hingga sepatu.</p>
+      </div>
+
+      <div class="grid-item" onclick="window.location.href='alamat.html'">
+        <h4>Alamat</h4>
+        <p>Kunjungi kami di alamat Toko Catalog yang telah disediakan.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p> @Copyright by 22552022315_Nizar Maulana Nazahal_222W.</p>
+  </footer>
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
